@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Mobike</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+        
+			<header id="header" class="ss">
+				<h1>Registro</h1>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="signup-form" method="post" action="#">
+                <div class="form-row">
+                <input type="text" id="rut" class="form-control" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+                    <br>
+                <input type="text" class="form-control" placeholder="Nombres" onkeypress="return sololetras(event)">
+                    <br>
+                <input type="text" class="form-control" placeholder="Apellidos" onkeypress="return sololetras(event)">
+                    <br>
+				<input type="email" class="form-control" placeholder="Correo Electronico" />
+                    <br>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+                    <br>
+                <input type="text" class="form-control" placeholder="N° Tarjeta" onkeypress="return sololetras(event)">
+                    <br>
+				<input type="submit" value="Registrate" />
+                </div>
+			</form>
+
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

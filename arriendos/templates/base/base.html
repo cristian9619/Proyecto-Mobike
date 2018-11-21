@@ -1,0 +1,67 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Mobike</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        
+	</head>
+	<body>
+
+            <div class="topnav" id="myTopnav">
+              <a href="Ubicacion.html">Ubicación</a>
+              <a href="Status.html">Disponible</a>
+              <a href="LoginAdmin.html">Administrador</a>
+              <a href="Arriendo.html">Arriendos</a>
+              <a href="pagoUso.html">Pagos</a>
+              <a href="AdminEstadoCliente.html">Clientes</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+
+
+            <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            </script>
+        
+			<header id="header">
+				<h1>MoBike</h1>
+				<p>Mobike, la forma mas saludable de viajar,<br />
+				tanto para el pais como para el usuario el cual<br />la ocupa, ya que disminuye el flujo vehicular y<br />da uso a las ciclovías. <a href="registrarse.html">REGISTRARSE</a>.</p>
+			</header>
+
+
+			<form id="signup-form" method="post" action="#">
+				<input type="email" name="email" id="email" placeholder="Usuario" />
+                <input type="password" name="password"  placeholder="Contraseña" />
+				<input type="submit" value="Iniciar Sesion" />
+			</form>
+
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled.</li><li>Creditos: <a href="https://www.ecured.cu/Comuna_La_Reina" target="_blank">Comuna la Reina</a></li>
+				</ul>
+			</footer>
+
+
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
